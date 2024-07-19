@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Stream</title>
+    <!-- Import Materialize CSS -->
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s6">
+                <h5>Webcam Feed</h5>
+                <video id="webcam" class="responsive-video" autoplay playsinline></video>
+            </div>
+            <div class="col s6">
+                <h5>Processed Frame</h5>
+                <img id="processed" class="responsive-img" />
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <!-- Import Materialize JS and initialization script -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
